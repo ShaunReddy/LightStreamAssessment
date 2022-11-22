@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/rickandmorty_root_nav_host_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    app:navGraph="@navigation/rickandmorty_nav_graph"
+    app:defaultNavHost="true"/>

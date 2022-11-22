@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginStart="@dimen/rickandmorty_margin_8"
+    android:layout_marginEnd="@dimen/rickandmorty_margin_8"
+    android:layout_marginTop="@dimen/rickandmorty_margin_8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rickandmorty_character_overview_img"
+            android:layout_width="@dimen/rickandmorty_size_img"
+            android:layout_height="@dimen/rickandmorty_size_img"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_overview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rickandmorty_character_overview_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_8"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textColor="@color/black"
+            tools:text="Rick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_overview_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_character_overview_name"
+            app:layout_constraintStart_toEndOf="@+id/rickandmorty_character_overview_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_8"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textColor="@color/black"
+            tools:text="Alive"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

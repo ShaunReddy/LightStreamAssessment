@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginStart="@dimen/rickandmorty_margin_8"
+    android:layout_marginEnd="@dimen/rickandmorty_margin_8"
+    android:layout_marginTop="@dimen/rickandmorty_margin_8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/rickandmorty_locations_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="@dimen/rickandmorty_margin_4"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:layout_marginBottom="@dimen/rickandmorty_margin_4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:Text= "Earth"
+            />
+        <TextView
+            android:id="@+id/rickandmorty_locations_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_locations_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginBottom="@dimen/rickandmorty_margin_4"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:Text= "Planet"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

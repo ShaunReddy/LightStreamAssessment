@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LightStreamAssignment</string>
+    <string name="tool_bar_title">Rick And Monty</string>
+    <string name="rickandmorty_characters_tab_title">Characters</string>
+    <string name="rickandmorty_locations_tab_title">Locations</string>
+    <string name="rickandmorty_failed_to_fetch_data">Failed to fetch latest data.</string>
+    <string name="rickandmorty_retry">Retry</string>
+    <string name="rickandmorty_fetch_success">Successfully fetched latest data.</string>
+    <string name="rickandmorty_fetch_loading">Fetching latest data...</string>
+    <string name="rickandmorty_characters_name">Name: %1$s</string>
+    <string name="rickandmorty_characters_status">Status: %1$s</string>
+    <string name="rickandmorty_characters_species">Species: %1$s</string>
+    <string name="rickandmorty_characters_gender">Gender: %1$s</string>
+    <string name="rickandmorty_characters_origin">Origin: %1$s</string>
+    <string name="rickandmorty_characters_last_know_location">Last know location: $s</string>
+    <string name="rickandmorty_location_name">Name: %1$s</string>
+    <string name="rickandmorty_location_type">Type: %1$s</string>
+    <string name="rickandmorty_location_dimension">Dimension: %1$s</string>
+    <string name="rickandmorty_location_details_residents">Residents:%1$d</string>
+    <string name="rickandmorty_location_details_residents_failed">Failed to fetch residents</string>
+    <string name="rickandmorty_location_details_residents_loading">Fetching residents...</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rickandmorty_nav_graph"
+    app:startDestination="@id/rickandmorty_explore_fragment">
+
+    <fragment
+        android:id="@+id/rickandmorty_explore_fragment"
+        android:name="com.example.shaunreddy.lightstreamassignment.explore.view.RickAndMortyExploreFragment"
+        tools:layout="@layout/rickandmorty_exlore_fragment"
+        >
+        <action
+            android:id="@+id/rickandmorty_character_overview_details"
+            app:destination="@+id/rickandmorty_character_details_fragment"
+            />
+        <action
+            android:id="@+id/rickandmorty_locations_details"
+            app:destination="@+id/rickandmorty_location_details_fragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rickandmorty_characters_fragment"
+        android:name="com.example.shaunreddy.lightstreamassignment.characters.view.RickAndMortyCharactersFragment"
+        tools:layout="@layout/rickandmorty_base_fragment"/>
+
+    <fragment
+        android:id="@+id/rickandmorty_character_details_fragment"
+        android:name="com.example.shaunreddy.lightstreamassignment.characters.view.RickAndMortyCharacterDetailsFragment"
+        tools:layout="@layout/rickandmorty_character_details_fragment">
+        <argument
+            android:name="rickAndMortyCharacterDetails"
+            app:argType="com.example.shaunreddy.lightstreamassignment.characters.api.modal.Character"
+            app:nullable="false"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/rickandmorty_location_details_fragment"
+        android:name="com.example.shaunreddy.lightstreamassignment.location.view.RickAndMortyLocationDetailsFragment"
+        tools:layout="@layout/rickandmorty_location_details_fragment">
+        <argument
+            android:name="rickandMortyLocationDetails"
+            app:argType="com.example.shaunreddy.lightstreamassignment.location.api.modal.RickAndMortyLocation"
+            app:nullable="false"
+            />
+        <action
+            android:id="@+id/rickandmorty_locations_details_character_details"
+            app:destination="@+id/rickandmorty_character_details_fragment"
+            />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rickandmorty_character_details_img"
+            android:layout_width="@dimen/rickandmorty_size_img_160"
+            android:layout_height="@dimen/rickandmorty_size_img_160"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:layout_marginTop="@dimen/rickandmorty_margin_8"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_details_name"
+            android:layout_width="@dimen/rickandmorty_height_fill"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rickandmorty_character_details_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_8"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:layout_marginEnd="@dimen/rickandmorty_margin_4"
+            android:textColor="@color/black"
+            tools:text="Name: Albert Einstein"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_details_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_character_details_name"
+            app:layout_constraintStart_toEndOf="@+id/rickandmorty_character_details_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_8"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:layout_marginEnd="@dimen/rickandmorty_margin_4"
+            android:textColor="@color/black"
+            tools:text="Status: Alive"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_details_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_character_details_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_8"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textColor="@color/black"
+            tools:text="Origin: Earth"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_details_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_character_details_origin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_4"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textColor="@color/black"
+            tools:text="Species: Human"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_details_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_character_details_species"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_4"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textColor="@color/black"
+            tools:text="Gender: Male"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rickandmorty_character_details_last_know_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rickandmorty_character_details_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/rickandmorty_margin_4"
+            android:layout_marginStart="@dimen/rickandmorty_margin_8"
+            android:textColor="@color/black"
+            tools:text="Last known location: Earth"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
